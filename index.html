@@ -178,21 +178,21 @@
         };
 
         // Flèches carrousel
-// document.getElementById('carouselPrev').addEventListener('click', () => {
-//   slideImgs[curSlide].style.opacity = '0';
-//   dotEls[curSlide].style.background = 'rgba(255,255,255,.3)';
-//   curSlide = (curSlide - 1 + affiches.length) % affiches.length;
-//   slideImgs[curSlide].style.opacity = '1';
-//   dotEls[curSlide].style.background = '#fff';
-// });
+document.getElementById('carouselPrev').addEventListener('click', () => {
+slideImgs[curSlide].style.opacity = '0';
+dotEls[curSlide].style.background = 'rgba(255,255,255,.3)';
+curSlide = (curSlide - 1 + affiches.length) % affiches.length;
+slideImgs[curSlide].style.opacity = '1';
+dotEls[curSlide].style.background = '#fff';
+});
 
-// document.getElementById('carouselNext').addEventListener('click', () => {
-//   slideImgs[curSlide].style.opacity = '0';
-//   dotEls[curSlide].style.background = 'rgba(255,255,255,.3)';
-//   curSlide = (curSlide + 1) % affiches.length;
-//   slideImgs[curSlide].style.opacity = '1';
-//   dotEls[curSlide].style.background = '#fff';
-// });
+document.getElementById('carouselNext').addEventListener('click', () => {
+   slideImgs[curSlide].style.opacity = '0';
+   dotEls[curSlide].style.background = 'rgba(255,255,255,.3)';
+  curSlide = (curSlide + 1) % affiches.length;
+  slideImgs[curSlide].style.opacity = '1';
+   dotEls[curSlide].style.background = '#fff';
+ });
 
         // ── Génération des cartes profil
         const row = document.getElementById('membersRow');
